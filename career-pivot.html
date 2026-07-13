@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monica Felan — Career Pivot Profile</title>
+  <style>
+    :root {
+      --navy:   #1a2744;
+      --teal:   #2a8c8c;
+      --teal-light: #3ab8b8;
+      --gold:   #e8a838;
+      --cream:  #f7f5f0;
+      --white:  #ffffff;
+      --gray:   #6b7280;
+      --light-gray: #f3f4f6;
+      --border: #e5e7eb;
+      --green:  #16a34a;
+      --amber:  #d97706;
+      --text:   #1f2937;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 56px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    }
+    nav .logo {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .04em;
+    }
+    nav .logo span { color: var(--teal-light); }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul a {
+      color: rgba(255,255,255,.8);
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    nav ul a:hover { color: var(--teal-light); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #243460 60%, #1e4a6e 100%);
+      color: var(--white);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='https://media.craiyon.com/2025-10-15/qLNwvsF9QkKuo9yLluJq1g.webp fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(42,140,140,.35);
+      border: 1px solid rgba(58,184,184,.4);
+      color: var(--teal-light);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .35rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+    .hero h1 span { color: var(--teal-light); }
+    .hero .subtitle {
+      font-size: clamp(.95rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,.75);
+      max-width: 640px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero .headline-pill {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      font-size: .9rem;
+      padding: .5rem 1.25rem;
+      border-radius: .5rem;
+      margin-bottom: 2rem;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat .num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--teal-light);
+      display: block;
+    }
+    .hero-stat .lbl {
+      font-size: .78rem;
+      color: rgba(255,255,255,.6);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .section-header .eyebrow {
+      display: inline-block;
+      background: rgba(42,140,140,.12);
+      color: var(--teal);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .3rem .85rem;
+      border-radius: 2rem;
+      margin-bottom: .75rem;
+    }
+    .section-header h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+      font-weight: 800;
+      color: var(--navy);
+    }
+    .section-header p {
+      color: var(--gray);
+      max-width: 560px;
+      margin: .6rem auto 0;
+      font-size: .97rem;
+    }
+
+    /* ── STORY BANNER ── */
+    .story-banner {
+      background: var(--white);
+      border-left: 5px solid var(--teal);
+      border-radius: 0 .75rem .75rem 0;
+      padding: 1.75rem 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      margin-bottom: 2rem;
+    }
+    .story-banner p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1rem;
+    }
+    .tag {
+      background: rgba(42,140,140,.1);
+      color: var(--teal);
+      font-size: .78rem;
+      font-weight: 600;
+      padding: .3rem .75rem;
+      border-radius: 2rem;
+      border: 1px solid rgba(42,140,140,.2);
+    }
+
+    /* ── 10 PATHS GRID ── */
+    .paths-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+    .path-card {
+      background: var(--white);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      border: 1px solid var(--border);
+      transition: transform .2s, box-shadow .2s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .path-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-light));
+    }
+    .path-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+    .path-card .num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      background: var(--navy);
+      color: var(--white);
+      font-size: .8rem;
+      font-weight: 800;
+      border-radius: .4rem;
+      margin-bottom: .75rem;
+    }
+    .path-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: .35rem;
+    }
+    .path-card .industry {
+      font-size: .78rem;
+      color: var(--teal);
+      font-weight: 600;
+      margin-bottom: .6rem;
+    }
+    .path-card .why {
+      font-size: .85rem;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+
+    /* ── TOP 5 ── */
+    .top5-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .top5-card {
+      background: var(--white);
+      border-radius: .85rem;
+      padding: 1.25rem 1.5rem;
+      border: 2px solid var(--teal-light);
+      box-shadow: 0 4px 16px rgba(42,140,140,.1);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .top5-rank {
+      flex-shrink: 0;
+      width: 2.2rem;
+      height: 2.2rem;
+      background: var(--teal);
+      color: var(--white);
+      font-weight: 800;
+      font-size: .9rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .top5-card h4 {
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: .25rem;
+    }
+    .top5-card p {
+      font-size: .82rem;
+      color: var(--gray);
+    }
+
+    /* ── AUDIT ACCORDION ── */
+    .audit-list { display: flex; flex-direction: column; gap: 1rem; }
+    .audit-item {
+      background: var(--white);
+      border-radius: .85rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(0,0,0,.04);
+      overflow: hidden;
+    }
+    .audit-toggle {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.5rem;
+      text-align: left;
+      font-family: inherit;
+    }
+    .audit-toggle:hover { background: var(--light-gray); }
+    .audit-toggle-left {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+    }
+    .audit-num {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: .4rem;
+      font-size: .8rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .audit-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .audit-chevron {
+      color: var(--teal);
+      font-size: 1.2rem;
+      transition: transform .25s;
+      flex-shrink: 0;
+    }
+    .audit-item.open .audit-chevron { transform: rotate(180deg); }
+    .audit-body {
+      display: none;
+      padding: 0 1.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .audit-item.open .audit-body { display: block; }
+    .audit-subsection { margin-top: 1.1rem; }
+    .audit-subsection h5 {
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: .5rem;
+    }
+    .audit-subsection.credible h5 { color: var(--green); }
+    .audit-subsection.gaps h5     { color: var(--amber); }
+    .audit-subsection.power h5    { color: var(--teal); }
+    .audit-subsection ul {
+      padding-left: 1.25rem;
+    }
+    .audit-subsection ul li {
+      font-size: .88rem;
+      color: var(--gray);
+      margin-bottom: .3rem;
+    }
+    .power-box {
+      background: linear-gradient(135deg, rgba(42,140,140,.07), rgba(42,140,140,.03));
+      border: 1px solid rgba(42,140,140,.2);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 .5rem .5rem 0;
+      padding: .85rem 1rem;
+      font-size: .9rem;
+      color: var(--text);
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    /* ── RESUME TIPS ── */
+    .tips-bg {
+      background: var(--navy);
+      padding: 4rem 1.5rem;
+    }
+    .tips-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .tips-bg .section-header .eyebrow { background: rgba(255,255,255,.1); color: var(--teal-light); }
+    .tips-bg .section-header h2 { color: var(--white); }
+    .tips-bg .section-header p   { color: rgba(255,255,255,.6); }
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .tip-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: .85rem;
+      padding: 1.35rem 1.5rem;
+    }
+    .tip-card .tip-icon {
+      font-size: 1.6rem;
+      margin-bottom: .6rem;
+    }
+    .tip-card h4 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--teal-light);
+      margin-bottom: .5rem;
+    }
+    .tip-card p, .tip-card li {
+      font-size: .85rem;
+      color: rgba(255,255,255,.7);
+      line-height: 1.6;
+    }
+    .tip-card ul { padding-left: 1.1rem; }
+    .tip-card ul li { margin-bottom: .25rem; }
+    .headline-box {
+      background: rgba(232,168,56,.12);
+      border: 1px solid rgba(232,168,56,.3);
+      border-radius: .6rem;
+      padding: .75rem 1rem;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--gold);
+      font-style: italic;
+      margin-top: .6rem;
+    }
+    .lang-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: .5rem;
+    }
+    .lang-table td {
+      font-size: .82rem;
+      color: rgba(255,255,255,.7);
+      padding: .3rem 0;
+      vertical-align: top;
+    }
+    .lang-table td:first-child {
+      color: rgba(255,255,255,.45);
+      padding-right: .75rem;
+      white-space: nowrap;
+      font-style: italic;
+    }
+    .lang-table td:last-child { color: rgba(58,184,184,.9); font-weight: 600; }
+    .arrow { color: var(--gold); margin: 0 .3rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111827;
+      color: rgba(255,255,255,.4);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .8rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      nav ul { display: none; }
+      .hero-stats { gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Monica <span>Felan</span></div>
+  <ul>
+    <li><a href="#story">Your Story</a></li>
+    <li><a href="#paths">10 Paths</a></li>
+    <li><a href="#top5">Top Picks</a></li>
+    <li><a href="#audit">Resume Audit</a></li>
+    <li><a href="#tips">Resume Tips</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-badge">Career Pivot Profile</div>
+  <h1>Monica <span>Felan</span></h1>
+  <p class="subtitle">Operations &bull; Compliance &bull; Multi-Site Coordination &bull; Training &bull; Documentation</p>
+  <div class="headline-pill">🎯 Target: $60,000+ &nbsp;|&nbsp; Remote / Hybrid Roles</div>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="num">10</span><span class="lbl">Hidden Gem Paths</span></div>
+    <div class="hero-stat"><span class="num">3–6</span><span class="lbl">Sites Coordinated</span></div>
+    <div class="hero-stat"><span class="num">2</span><span class="lbl">Successful Audits</span></div>
+    <div class="hero-stat"><span class="num">5</span><span class="lbl">Top Paths to Pursue</span></div>
+  </div>
+</header>
+
+<!-- YOUR STORY -->
+<section id="story" class="section">
+  <div class="section-header">
+    <span class="eyebrow">Your Pivot Story</span>
+    <h2>What You Bring Beyond Nutrition</h2>
+    <p>Your strongest non-clinical narrative spans multiple high-value disciplines.</p>
+  </div>
+  <div class="story-banner">
+    <p>Your strongest non-clinical story is <strong>operations + compliance + multi-site coordination + training + documentation discipline.</strong> You have experience maintaining inventory, managing specialized requirements, building audit-ready records, delivering education, and coordinating across 3–6 locations — all valuable well beyond nutrition programs.</p>
+    <p style="margin-top:.85rem; color: var(--gray); font-size:.9rem;">The following roles prioritize <strong>remote/hybrid potential</strong> and typical mid-level compensation at or above a <strong>$60,000 base-salary target</strong>, depending on location, employer, and scope. They exclude the sectors you've listed.</p>
+    <div class="tags">
+      <span class="tag">Inventory Controls</span>
+      <span class="tag">Audit Readiness</span>
+      <span class="tag">Multi-Site Operations</span>
+      <span class="tag">Compliance Documentation</span>
+      <span class="tag">Training & Education Delivery</span>
+      <span class="tag">Record Keeping</span>
+      <span class="tag">Program Coordination</span>
+      <span class="tag">Stakeholder Communication</span>
+    </div>
+  </div>
+</section>
+
+<!-- 10 PATHS -->
+<div style="background: var(--light-gray); padding: 0 0 .5rem;">
+<section id="paths" class="section" style="padding-top: 3.5rem;">
+  <div class="section-header">
+    <span class="eyebrow">Part 1</span>
+    <h2>10 "Hidden Gem" Career Paths</h2>
+    <p>Roles selected for transferability, remote/hybrid potential, and $60K+ mid-level compensation.</p>
+  </div>
+  <div class="paths-grid">
+
+    <div class="path-card">
+      <div class="num-badge">1</div>
+      <h3>Supply Chain Compliance Specialist</h3>
+      <div class="industry">Logistics / Supply Chain Operations</div>
+      <p class="why">Inventory controls, records, audit preparation, and multi-site coordination transfer directly.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">2</div>
+      <h3>Quality Management Systems (QMS) Coordinator</h3>
+      <div class="industry">Manufacturing, Clean Tech, Sustainable Energy</div>
+      <p class="why">A documentation-heavy role focused on process consistency, corrective actions, and audit readiness.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">3</div>
+      <h3>Renewable Energy Project Coordinator</h3>
+      <div class="industry">Sustainable Energy</div>
+      <p class="why">Project tracking, stakeholder communication, scheduling, documentation, and implementation support.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">4</div>
+      <h3>EHS Training Coordinator</h3>
+      <div class="industry">Clean Energy, Manufacturing, Aviation</div>
+      <p class="why">Uses your education delivery, training, compliance, and record-maintenance experience — without being a healthcare role.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">5</div>
+      <h3>Aviation Operations Compliance Coordinator</h3>
+      <div class="industry">Aerospace / Aviation Operations</div>
+      <p class="why">Procedures, audit records, training logs, operational documentation, and cross-team coordination.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">6</div>
+      <h3>Learning Operations Specialist</h3>
+      <div class="industry">E-Learning Infrastructure / Education Technology</div>
+      <p class="why">Coordinates course operations, learner records, virtual sessions, content updates, and reporting.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">7</div>
+      <h3>Legal Operations Project Coordinator</h3>
+      <div class="industry">Legal Tech / Corporate Legal Operations</div>
+      <p class="why">Supports legal teams with matter workflows, documentation, reporting, process improvement, and project coordination.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">8</div>
+      <h3>Implementation Operations Specialist</h3>
+      <div class="industry">Legal Tech, SaaS, Logistics Technology</div>
+      <p class="why">Helps operationally onboard systems and processes; values training, workflow organization, data accuracy, and follow-through.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">9</div>
+      <h3>Project Controls Specialist</h3>
+      <div class="industry">Energy, Construction Technology, Aerospace, Infrastructure</div>
+      <p class="why">Focuses on project documentation, schedules, status reporting, issue tracking, and administrative controls.</p>
+    </div>
+
+    <div class="path-card">
+      <div class="num-badge">10</div>
+      <h3>Food Safety &amp; Supplier Compliance Specialist</h3>
+      <div class="industry">Food Manufacturing, Distribution, Supply Chain</div>
+      <p class="why">A high-confidence adjacent pivot that translates your food-program oversight, inventory, menus, audit results, and ServSafe certification.</p>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<!-- TOP 5 -->
+<section id="top5" class="section">
+  <div class="section-header">
+    <span class="eyebrow">Where to Start</span>
+    <h2>Highest-Probability Paths to Pursue First</h2>
+    <p>These five roles offer the strongest alignment with your existing experience and credentials.</p>
+  </div>
+  <div class="top5-grid">
+
+    <div class="top5-card">
+      <div class="top5-rank">1</div>
+      <div>
+        <h4>Food Safety &amp; Supplier Compliance Specialist</h4>
+        <p>Closest fit, reinforced by your ServSafe certification and two successful audit outcomes.</p>
+      </div>
+    </div>
+
+    <div class="top5-card">
+      <div class="top5-rank">2</div>
+      <div>
+        <h4>Supply Chain Compliance Specialist</h4>
+        <p>Strong multi-site inventory and operational reporting transfer.</p>
+      </div>
+    </div>
+
+    <div class="top5-card">
+      <div class="top5-rank">3</div>
+      <div>
+        <h4>Quality Management Systems Coordinator</h4>
+        <p>Your documentation and audit discipline are highly relevant to QMS roles.</p>
+      </div>
+    </div>
+
+    <div class="top5-card">
+      <div class="top5-rank">4</div>
+      <div>
+        <h4>Learning Operations Specialist</h4>
+        <p>Especially suitable if you enjoy training, facilitation, and virtual work.</p>
+      </div>
+    </div>
+
+    <div class="top5-card">
+      <div class="top5-rank">5</div>
+      <div>
+        <h4>EHS Training Coordinator</h4>
+        <p>A credible pivot if you want to preserve your education/training strengths while leaving healthcare.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME AUDIT -->
+<div style="background: var(--light-gray); padding: .5rem 0 1rem;">
+<section id="audit" class="section" style="padding-top: 3.5rem;">
+  <div class="section-header">
+    <span class="eyebrow">Part 2</span>
+    <h2>Resume Audit &amp; Transferable-Skills Map</h2>
+    <p>Click any role to expand your credibility assessment, experience gaps, and power statement.</p>
+  </div>
+  <div class="audit-list">
+
+    <!-- 1 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">1</span>
+          <span class="audit-title">Supply Chain Compliance Specialist</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>Managed food, milk, kitchen-supply, and inventory activity across 3–6 program locations.</li>
+            <li>Maintained records and reports that supported two successful center audits.</li>
+            <li>Used inventory management, reordering, report-generation, Excel, and organizational skills.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No direct experience with shipping, freight, warehouse systems, supplier scorecards, or ERP platforms.</li>
+            <li>Use more supply-chain language: inventory controls, replenishment, multi-site operations, compliance documentation, and operational reporting.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Coordinated inventory, replenishment records, and compliance documentation across 3–6 service locations, helping maintain audit-ready operations that contributed to two successful center audit outcomes.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">2</span>
+          <span class="audit-title">Quality Management Systems (QMS) Coordinator</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>Built and maintained organized binders, menus, specialty lists, and nutrition-related documentation.</li>
+            <li>Demonstrated audit readiness through strong record and report keeping.</li>
+            <li>Applied critical thinking to specialized dietary and allergy requirements where accuracy mattered.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No named QMS framework or software experience, such as ISO-oriented documentation control, CAPA, deviation tracking, or document-control systems.</li>
+            <li>Consider introductory training in quality systems, root-cause analysis, or internal auditing.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Maintained standardized, audit-ready operational records — including specialized requirement documentation, inventory reports, and site binders — to support consistent execution across multiple locations.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">3</span>
+          <span class="audit-title">Renewable Energy Project Coordinator</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>Coordinated multiple moving parts across several locations rather than working in a single-site role.</li>
+            <li>Organized programs, classes, records, calendars, and stakeholder communication.</li>
+            <li>Brings presentation, public-speaking, training, time-management, and report-generation skills.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No direct renewable-energy, construction, engineering, budget, schedule, or project-management software experience.</li>
+            <li>Build familiarity with project fundamentals: schedules, risks, action logs, milestones, and status reports.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Coordinated multi-site program operations by organizing requirements, maintaining accurate records, communicating updates, and supporting timely execution across 3–6 locations.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">4</span>
+          <span class="audit-title">Environmental, Health &amp; Safety (EHS) Training Coordinator</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>Develops and provides health education and consultation in the current Nutritionist role.</li>
+            <li>Has strong training, public-speaking, presentation, and interpersonal-communication skills.</li>
+            <li>Maintained required records and operated in compliance-conscious environments.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No direct EHS regulations, incident reporting, OSHA-related training, safety-management systems, or hazard-assessment experience listed.</li>
+            <li>Target coordinator roles emphasizing training administration first; pursue basic OSHA/EHS coursework if this path appeals to you.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Designed and delivered educational sessions while maintaining accurate participant and program information, combining clear facilitation with disciplined compliance documentation.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">5</span>
+          <span class="audit-title">Aviation Operations Compliance Coordinator</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>Your audit and documentation experience maps well to procedure-driven operations.</li>
+            <li>Demonstrated detail orientation in maintaining specialized menus, allergy requirements, and maintenance records.</li>
+            <li>Can coordinate information among classrooms, kitchens, sites, and program stakeholders.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No aviation regulations, FAA exposure, safety-management-system experience, or aviation operations terminology.</li>
+            <li>Seek entry points titled operations compliance coordinator, document control coordinator, or training records coordinator within aviation companies.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Supported procedure-driven, multi-site operations by maintaining accurate requirement records, coordinating updates across stakeholders, and preparing documentation for successful audits.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">6</span>
+          <span class="audit-title">Learning Operations Specialist</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>You conduct nutrition classes and programs and have formal training and presentation experience.</li>
+            <li>You use Zoom and Microsoft Office tools relevant to virtual-session administration.</li>
+            <li>You have experience maintaining participant, site, and program data.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No learning-management system, course-authoring platform, learner analytics, or e-learning content-management experience named.</li>
+            <li>Add exposure to common LMS concepts through a small certificate or sample project; highlight virtual facilitation and data maintenance now.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Delivered educational programming and maintained related participant and site information, using strong facilitation, data-maintenance, and virtual communication skills to support consistent learning operations.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">7</span>
+          <span class="audit-title">Legal Operations Project Coordinator</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>You have a strong record of organizing sensitive, detailed, compliance-related documentation.</li>
+            <li>You supported audits by ensuring records, reports, and operational materials were complete and current.</li>
+            <li>Your background shows cross-functional coordination, deadline awareness, and clear communication.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No legal matter management, e-billing, contracts, legal terminology, or legal-tech platforms.</li>
+            <li>Position yourself around process and project coordination, not legal expertise; introductory legal-operations coursework would strengthen this pivot.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Managed high-detail operational documentation and reporting across multiple sites, ensuring records were current, organized, and available to support audit and compliance reviews.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">8</span>
+          <span class="audit-title">Implementation Operations Specialist</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>You have trained and educated end users through classes, programs, consultation, and presentations.</li>
+            <li>You have translated specialized requirements into usable lists, menus, binders, and site resources.</li>
+            <li>You bring strong follow-through in documentation, data maintenance, communication, and organization.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No software-implementation lifecycle, configuration, ticketing system, or customer-onboarding experience.</li>
+            <li>Avoid roles dominated by sales/account growth; pursue implementation operations or enablement roles centered on process, training, and adoption.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Translated specialized operational requirements into clear, usable materials and coordinated updates across sites, helping teams apply consistent processes and maintain accurate records.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">9</span>
+          <span class="audit-title">Project Controls Specialist</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>Maintained reports and records needed for audit and operational oversight.</li>
+            <li>Organized multi-site inventory, menus, maintenance information, specialty requirements, and supply needs.</li>
+            <li>Demonstrated time management and attention to detail in a role requiring accurate, current information.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No direct project schedules, cost tracking, forecasting, construction/engineering documentation, or tools such as Primavera P6/MS Project listed.</li>
+            <li>Start with project-coordinator or project-controls-assistant postings and learn the language of milestones, risks, dependencies, change logs, and status reports.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Maintained accurate multi-site operational reports, inventory information, and requirement documentation, enabling organized tracking and audit-ready program oversight.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="audit-item">
+      <button class="audit-toggle" onclick="toggleAudit(this)">
+        <div class="audit-toggle-left">
+          <span class="audit-num">10</span>
+          <span class="audit-title">Food Safety &amp; Supplier Compliance Specialist</span>
+        </div>
+        <span class="audit-chevron">&#9660;</span>
+      </button>
+      <div class="audit-body">
+        <div class="audit-subsection credible">
+          <h5>✅ Why You Are Credible</h5>
+          <ul>
+            <li>This is your closest industry-adjacent pivot: you oversaw food, milk, menus, kitchen supplies, and inventory.</li>
+            <li>You maintained records covering menus, inventory, kitchen maintenance, and nutrition concerns, leading to two successful audits.</li>
+            <li>Your ServSafe Food Protection Manager Certification is directly relevant through April 2028.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection gaps">
+          <h5>⚠️ Experience Gaps to Address</h5>
+          <ul>
+            <li>No commercial manufacturing, supplier-management, HACCP, FDA/USDA, recall, traceability, or quality-management-system experience shown.</li>
+            <li>Add food-safety terminology only if accurate; gaining HACCP training would be a particularly efficient credential for this route.</li>
+          </ul>
+        </div>
+        <div class="audit-subsection power">
+          <h5>💬 Resume Power Statement</h5>
+          <div class="power-box">Oversaw food, milk, menu, kitchen-supply, and inventory documentation across 3–6 locations; maintained audit-ready records that supported two successful center audit reports.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div>
+
+<!-- RESUME TIPS -->
+<div class="tips-bg" id="tips">
+  <div class="tips-inner">
+    <div class="section-header">
+      <span class="eyebrow">Resume Strategy</span>
+      <h2>Resume-Level Changes That Will Help Across All 10 Paths</h2>
+      <p>Apply these updates once to make your resume work across every role on this list.</p>
+    </div>
+    <div class="tips-grid">
+
+      <div class="tip-card">
+        <div class="tip-icon">🏷️</div>
+        <h4>New Transition-Ready Headline</h4>
+        <p>Replace your nutrition-only headline with:</p>
+        <div class="headline-box">Operations, Compliance &amp; Training Coordinator | Multi-Site Inventory, Audit Documentation, and Program Execution</div>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🏅</div>
+        <h4>Move ServSafe Front and Center</h4>
+        <p>Move your ServSafe Food Protection Manager Certification high on the page for compliance, operations, and food-safety roles. It's active through April 2028 and a direct differentiator.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">📊</div>
+        <h4>Lead With Your Measurable Differentiators</h4>
+        <p>Make these two facts prominent in your Head Start bullets — they are your clearest quantified wins:</p>
+        <ul>
+          <li>Two successful center audits</li>
+          <li>3–6 site coordination scope</li>
+        </ul>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🔄</div>
+        <h4>Translate Sector-Specific Language</h4>
+        <table class="lang-table">
+          <tr><td>patient/site information</td><td>→</td><td>program &amp; operational data</td></tr>
+          <tr><td>nutrition classes</td><td>→</td><td>training &amp; educational delivery</td></tr>
+          <tr><td>menus and binders</td><td>→</td><td>controlled operational documentation</td></tr>
+          <tr><td>kitchen supplies</td><td>→</td><td>inventory &amp; supply coordination</td></tr>
+          <tr><td>specialty menus/allergies</td><td>→</td><td>specialized requirements &amp; compliance controls</td></tr>
+        </table>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">💻</div>
+        <h4>Add a Technical Skills Line</h4>
+        <p>Emphasize the following skills accurately:</p>
+        <ul>
+          <li>Microsoft Excel, Word, Outlook, Zoom</li>
+          <li>Inventory management systems</li>
+          <li>Data maintenance &amp; report generation</li>
+          <li>Audit documentation</li>
+          <li>Multi-site coordination</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Monica Felan &mdash; Career Pivot Profile &nbsp;&bull;&nbsp; Confidential Career Strategy Document</p>
+</footer>
+
+<script>
+  function toggleAudit(btn) {
+    const item = btn.closest('.audit-item');
+    item.classList.toggle('open');
+  }
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>
