@@ -212,6 +212,32 @@ ul { list-style: none; }
   margin-bottom: 1.8rem;
 }
 .hero-title em { font-style: italic; color: var(--accent-light); }
+.hero-slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 2rem 0 1.5rem 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  max-width: 400px;
+}
+.slogan-main {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: var(--accent-light);
+  text-transform: uppercase;
+}
+.slogan-sub {
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  font-style: italic;
+}
 .hero-desc {
   font-size: 1.05rem;
   color: rgba(255,255,255,0.78);
@@ -525,6 +551,14 @@ ul { list-style: none; }
   text-align: center;
 }
 .footer .logo { color: #fff; font-size: 1.6rem; margin-bottom: 0.5rem; display: block; }
+.footer-slogan {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-light) !important;
+  margin: 0.5rem 0 0.8rem 0 !important;
+}
 .footer-brand p { font-size: 0.82rem; line-height: 1.7; }
 .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
 .footer-links a {
@@ -570,6 +604,9 @@ ul { list-style: none; }
   .nav-links a { color: var(--dark) !important; }
   .hamburger { display: flex; }
   .hero-btns { flex-direction: column; align-items: flex-start; }
+  .hero-slogan { max-width: 100%; }
+  .slogan-main { font-size: 2rem; }
+  .slogan-sub { font-size: 0.75rem; }
   .contact-form-wrap { padding: 2rem; }
   .pillars-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
