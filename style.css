@@ -246,6 +246,15 @@ ul { list-style: none; }
   opacity: 0.7;
   line-height: 1;
 }
+.slogan-meaning {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  padding-left: 0.2rem;
+  margin-top: -0.3rem;
+}
 .slogan-tagline {
   font-size: 0.75rem;
   font-weight: 400;
@@ -253,6 +262,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.8);
   padding-left: 0.2rem;
   font-style: italic;
+  margin-top: 0.3rem;
 }
 .slogan-tagline strong {
   font-weight: 700;
@@ -587,12 +597,22 @@ ul { list-style: none; }
   color: var(--accent-light);
   text-transform: uppercase;
 }
+.footer-meaning {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-top: 0.1rem;
+}
 .footer-tagline {
   font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: rgba(255,255,255,0.5);
-  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+  margin-top: 0.3rem;
 }
 .footer-brand p { font-size: 0.82rem; line-height: 1.7; }
 .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; }
@@ -642,7 +662,8 @@ ul { list-style: none; }
   .hero-slogan { max-width: 100%; padding: 1.5rem 1.5rem; }
   .acronym-letter { font-size: 2.2rem; }
   .acronym-dot { font-size: 1.5rem; }
-  .slogan-tagline { font-size: 0.65rem; }
+  .slogan-meaning { font-size: 0.6rem; }
+  .slogan-tagline { font-size: 0.68rem; }
   .contact-form-wrap { padding: 2rem; }
   .pillars-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
