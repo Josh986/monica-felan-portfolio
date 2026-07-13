@@ -460,6 +460,76 @@
     .lang-table td:last-child { color: rgba(58,184,184,.9); font-weight: 600; }
     .arrow { color: var(--gold); margin: 0 .3rem; }
 
+    /* ── DOWNLOAD BUTTONS ── */
+    .dl-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--teal);
+      color: var(--white);
+      text-decoration: none;
+      font-size: .82rem;
+      font-weight: 700;
+      padding: .55rem 1.1rem;
+      border-radius: .5rem;
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+      box-shadow: 0 2px 6px rgba(42,140,140,.25);
+    }
+    .dl-btn:hover { background: #216f6f; transform: translateY(-1px); }
+    .dl-btn.gold { background: var(--gold); color: var(--navy); box-shadow: 0 2px 6px rgba(232,168,56,.3); }
+    .dl-btn.gold:hover { background: #d1962b; }
+    .dl-btn .ico { font-size: .95rem; }
+    .audit-dl { margin-top: 1rem; }
+
+    /* ── RESUME REVIEW ── */
+    .review-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .review-col {
+      background: var(--white);
+      border-radius: .85rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      border: 1px solid var(--border);
+    }
+    .review-col.strengths { border-top: 4px solid var(--green); }
+    .review-col.improve   { border-top: 4px solid var(--amber); }
+    .review-col h4 {
+      font-size: .95rem;
+      font-weight: 800;
+      margin-bottom: .75rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .review-col.strengths h4 { color: var(--green); }
+    .review-col.improve h4   { color: var(--amber); }
+    .review-col ul { padding-left: 1.2rem; }
+    .review-col ul li { font-size: .87rem; color: var(--gray); margin-bottom: .45rem; line-height: 1.5; }
+    .master-dl-banner {
+      background: linear-gradient(135deg, var(--navy), #243460);
+      border-radius: 1rem;
+      padding: 1.75rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      box-shadow: 0 4px 16px rgba(26,39,68,.2);
+    }
+    .master-dl-banner .txt h4 { color: var(--white); font-size: 1.1rem; margin-bottom: .25rem; }
+    .master-dl-banner .txt p  { color: rgba(255,255,255,.7); font-size: .87rem; max-width: 560px; }
+    .rating {
+      display: inline-flex; align-items: center; gap: .5rem;
+      background: rgba(42,140,140,.12); color: var(--teal);
+      font-weight: 700; font-size: .85rem;
+      padding: .4rem 1rem; border-radius: 2rem; margin-bottom: 1.25rem;
+    }
+    @media (max-width: 640px) { .review-grid { grid-template-columns: 1fr; } }
+
     /* ── FOOTER ── */
     footer {
       background: #111827;
@@ -483,6 +553,7 @@
   <div class="logo">Monica <span>Felan</span></div>
   <ul>
     <li><a href="#story">Your Story</a></li>
+    <li><a href="#review">Resume Review</a></li>
     <li><a href="#paths">10 Paths</a></li>
     <li><a href="#top5">Top Picks</a></li>
     <li><a href="#audit">Resume Audit</a></li>
@@ -524,6 +595,52 @@
       <span class="tag">Program Coordination</span>
       <span class="tag">Stakeholder Communication</span>
     </div>
+  </div>
+</section>
+
+<!-- RESUME REVIEW -->
+<section id="review" class="section" style="padding-top: 1rem;">
+  <div class="section-header">
+    <span class="eyebrow">Resume Review</span>
+    <h2>Your Current Resume — Reviewed</h2>
+    <p>A quick assessment of your existing Nutritionist resume, plus tailored versions for every target role.</p>
+  </div>
+
+  <div style="text-align:center;">
+    <span class="rating">⭐ Overall: Solid foundation — strong content, needs cross-industry framing</span>
+  </div>
+
+  <div class="review-grid">
+    <div class="review-col strengths">
+      <h4>✅ Strengths</h4>
+      <ul>
+        <li>Clear, quantified wins: <strong>two successful audits</strong> and <strong>3–6 site coordination</strong> stand out.</li>
+        <li>Strong, relevant certification (ServSafe, active through April 2028).</li>
+        <li>Well-organized sections and a genuine multi-skill background (operations, training, compliance).</li>
+        <li>Concise, single-page format that is easy to scan.</li>
+        <li>Consistent, credible career progression across two solid roles.</li>
+      </ul>
+    </div>
+    <div class="review-col improve">
+      <h4>⚠️ Opportunities to Improve</h4>
+      <ul>
+        <li>Headline reads "Nutritionist" only — too narrow for non-clinical pivots.</li>
+        <li>Language is sector-specific (patients, menus, kitchens); translate to cross-industry terms.</li>
+        <li>ServSafe cert and audit wins are buried — move them higher for impact.</li>
+        <li>Summary targets one WIC job; a transition-ready summary opens more doors.</li>
+        <li>Skills list mixes strong and generic items — lead with transferable operations/compliance skills.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="master-dl-banner">
+    <div class="txt">
+      <h4>📄 Download Your Improved Master Resume</h4>
+      <p>A rewritten, transition-ready version of your resume — reframed as an Operations, Compliance &amp; Training Coordinator with your audit wins and multi-site scope front and center.</p>
+    </div>
+    <a class="dl-btn gold" href="resumes/Monica_Felan_Master_Resume.pdf" download>
+      <span class="ico">⬇</span> Download Master Resume (PDF)
+    </a>
   </div>
 </section>
 
@@ -702,6 +819,9 @@
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Coordinated inventory, replenishment records, and compliance documentation across 3–6 service locations, helping maintain audit-ready operations that contributed to two successful center audit outcomes.</div>
         </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Supply_Chain_Compliance_Specialist.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
+        </div>
       </div>
     </div>
 
@@ -733,6 +853,9 @@
         <div class="audit-subsection power">
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Maintained standardized, audit-ready operational records — including specialized requirement documentation, inventory reports, and site binders — to support consistent execution across multiple locations.</div>
+        </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_QMS_Coordinator.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
         </div>
       </div>
     </div>
@@ -766,6 +889,9 @@
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Coordinated multi-site program operations by organizing requirements, maintaining accurate records, communicating updates, and supporting timely execution across 3–6 locations.</div>
         </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Renewable_Energy_Project_Coordinator.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
+        </div>
       </div>
     </div>
 
@@ -797,6 +923,9 @@
         <div class="audit-subsection power">
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Designed and delivered educational sessions while maintaining accurate participant and program information, combining clear facilitation with disciplined compliance documentation.</div>
+        </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_EHS_Training_Coordinator.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
         </div>
       </div>
     </div>
@@ -830,6 +959,9 @@
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Supported procedure-driven, multi-site operations by maintaining accurate requirement records, coordinating updates across stakeholders, and preparing documentation for successful audits.</div>
         </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Aviation_Operations_Compliance_Coordinator.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
+        </div>
       </div>
     </div>
 
@@ -861,6 +993,9 @@
         <div class="audit-subsection power">
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Delivered educational programming and maintained related participant and site information, using strong facilitation, data-maintenance, and virtual communication skills to support consistent learning operations.</div>
+        </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Learning_Operations_Specialist.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
         </div>
       </div>
     </div>
@@ -894,6 +1029,9 @@
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Managed high-detail operational documentation and reporting across multiple sites, ensuring records were current, organized, and available to support audit and compliance reviews.</div>
         </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Legal_Operations_Project_Coordinator.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
+        </div>
       </div>
     </div>
 
@@ -925,6 +1063,9 @@
         <div class="audit-subsection power">
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Translated specialized operational requirements into clear, usable materials and coordinated updates across sites, helping teams apply consistent processes and maintain accurate records.</div>
+        </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Implementation_Operations_Specialist.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
         </div>
       </div>
     </div>
@@ -958,6 +1099,9 @@
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Maintained accurate multi-site operational reports, inventory information, and requirement documentation, enabling organized tracking and audit-ready program oversight.</div>
         </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Project_Controls_Specialist.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
+        </div>
       </div>
     </div>
 
@@ -989,6 +1133,9 @@
         <div class="audit-subsection power">
           <h5>💬 Resume Power Statement</h5>
           <div class="power-box">Oversaw food, milk, menu, kitchen-supply, and inventory documentation across 3–6 locations; maintained audit-ready records that supported two successful center audit reports.</div>
+        </div>
+        <div class="audit-dl">
+          <a class="dl-btn" href="resumes/Monica_Felan_Food_Safety_Supplier_Compliance_Specialist.pdf" download><span class="ico">⬇</span> Download Tailored Resume for This Role</a>
         </div>
       </div>
     </div>
