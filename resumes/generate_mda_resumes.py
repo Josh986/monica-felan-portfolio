@@ -14,7 +14,7 @@ OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 NAME = "MONICA D. FELÁN"
 CONTACT = ("Pasadena, TX &nbsp;|&nbsp; 979.549.6720 &nbsp;|&nbsp; "
-           "felanmonica94@outlook.com &nbsp;|&nbsp; linkedin.com/in/monica-d-felan94")
+           "felanmonica94@outlook.com &nbsp;|&nbsp; linkedin.com/in/monica-felan")
 CERTS = "ServSafe Food Protection Manager Certification &nbsp;&mdash;&nbsp; April 2023 – April 2028"
 
 EDUCATION = """

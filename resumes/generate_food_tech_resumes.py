@@ -10,7 +10,7 @@ OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 # ------------------------------------------------------------------ #
 NAME = "MONICA D. FELÁN"
 CONTACT = ("Pasadena, TX &nbsp;|&nbsp; 979.549.6720 &nbsp;|&nbsp; "
-           "felanmonica94@outlook.com &nbsp;|&nbsp; linkedin.com/in/monica-d-felan94")
+           "felanmonica94@outlook.com &nbsp;|&nbsp; linkedin.com/in/monica-felan")
 
 CERTS = """
 <div class="cert-item"><b>ServSafe Food Protection Manager Certification</b> &nbsp;&mdash;&nbsp; Valid through April 2028</div>
@@ -139,29 +139,22 @@ resumes = {}
 resumes["fsqa_tech"] = dict(
     filename="Monica_Felan_FSQA_Technician.pdf",
     target_role="Food Safety & Quality Assurance (FSQA) Technician",
-    summary=("Food safety and compliance professional with 4+ years managing food operations, inventory controls, "
-             "and audit-ready documentation across 3–6 service locations. ServSafe Food Protection Manager and "
-             "HACCP certified (in progress), with a proven record of supporting two successful compliance audits. "
-             "Strong in regulatory documentation, multi-site coordination, sanitation monitoring, and GMP adherence. "
-             "Seeking an FSQA Technician role in food manufacturing to apply food safety, quality assurance, and "
-             "audit-support experience."),
-    food_safety_skills=("ServSafe Certified | HACCP (in progress) | Audit Preparation & Support | GMP Compliance | "
-                        "Sanitation Monitoring | Food Safety Documentation | Allergen Control | Temperature Monitoring | "
-                        "Regulatory Record-Keeping | Corrective Action Documentation"),
-    tech_skills=("Microsoft Excel, Word, Outlook & Calendar | Inventory Management Systems | LIMS (developing) | "
-                 "Data Collection & Maintenance | Report Generation | Food Safety Logs | Traceability Systems"),
-    prof_skills=("Attention to Detail | Multi-Site Coordination | Critical Thinking | Training & Education | "
-                 "Cross-Functional Communication | Time Management | Problem Solving"),
+    summary=("Food safety professional with 4+ years managing food operations and audit-ready documentation across 3–6 "
+             "locations. ServSafe and HACCP certified (in progress), with two successful compliance audits. Strong in "
+             "regulatory documentation, GMP adherence, and multi-site coordination."),
+    food_safety_skills=("ServSafe Certified | HACCP (in progress) | Audit Support | GMP Compliance | Sanitation Monitoring | "
+                        "Allergen Control | Food Safety Documentation | Corrective Action | Regulatory Record-Keeping"),
+    tech_skills=("Microsoft Excel, Word, Outlook | Inventory Management Systems | LIMS (developing) | Food Safety Logs | "
+                 "Data Collection | Report Generation | Traceability Systems"),
+    prof_skills=("Multi-Site Coordination | Attention to Detail | Critical Thinking | Training | Communication | Time Management"),
     houston_bullets=[
-        "Maintain program data and participant records in compliance with federal nutrition program requirements, ensuring accuracy and regulatory readiness.",
-        "Deliver health education and consultation while adhering to standardized protocols and documentation requirements.",
-        "Compile statistical site information for program reporting and oversight.",
+        "Maintain program data and records in compliance with federal requirements, ensuring accuracy and regulatory readiness.",
+        "Deliver health education while adhering to standardized protocols and documentation requirements.",
     ],
     headstart_bullets=[
-        "Managed food safety and inventory operations across 3–6 program locations, overseeing food, milk, menus, and kitchen supplies while maintaining audit-ready documentation.",
-        "Achieved two successful center audit outcomes by maintaining meticulous records of food inventory, kitchen maintenance, allergen controls, and compliance documentation.",
-        "Organized and updated specialty menus, allergen lists, and site binders to support consistent food safety execution and regulatory compliance across multiple locations.",
-        "Applied ServSafe food safety principles to daily operations, including temperature monitoring, sanitation verification, and supplier record maintenance.",
+        "Managed food safety and inventory operations across 3–6 locations, maintaining audit-ready documentation for food, milk, menus, and supplies.",
+        "Achieved two successful center audits by maintaining meticulous records of inventory, allergen controls, and compliance documentation.",
+        "Applied ServSafe principles to daily operations, including temperature monitoring, sanitation verification, and supplier records.",
     ],
 )
 
@@ -197,30 +190,22 @@ resumes["qc_tech"] = dict(
 resumes["compliance"] = dict(
     filename="Monica_Felan_Food_Safety_Compliance_Specialist.pdf",
     target_role="Food Safety Compliance Specialist",
-    summary=("Compliance-focused food safety professional with 4+ years managing regulatory documentation, audit "
-             "preparation, and multi-site food operations. ServSafe Food Protection Manager and HACCP certified "
-             "(in progress), with a proven track record of achieving two successful compliance audits across 3–6 "
-             "service locations. Strong in regulatory record-keeping, traceability, corrective action documentation, "
-             "and training. Seeking a Food Safety Compliance Specialist role to support manufacturing compliance, "
-             "audits, and regulatory readiness."),
-    food_safety_skills=("ServSafe Certified | HACCP (in progress) | Regulatory Compliance (FDA/USDA awareness) | "
-                        "Audit Preparation & Support | GMP & SSOP Adherence | Traceability & Record-Keeping | "
-                        "Corrective Action Documentation | Food Safety Training | Sanitation Verification | Allergen Control"),
-    tech_skills=("Microsoft Excel (compliance reporting, data tracking) | Microsoft Word, Outlook & Calendar | "
-                 "Inventory Management Systems | Food Safety Logs | Regulatory Documentation | Traceability Systems | "
-                 "LIMS (developing) | Report Generation"),
-    prof_skills=("Regulatory Knowledge | Audit Readiness | Multi-Site Coordination | Training & Education | "
-                 "Problem Solving | Cross-Functional Communication | Attention to Detail | Time Management"),
+    summary=("Compliance-focused food safety professional with 4+ years managing regulatory documentation and multi-site "
+             "operations. ServSafe and HACCP certified (in progress), with two successful compliance audits across 3–6 "
+             "locations. Strong in audit preparation, traceability, corrective action documentation, and training."),
+    food_safety_skills=("ServSafe Certified | HACCP (in progress) | Regulatory Compliance (FDA/USDA awareness) | Audit Support | "
+                        "GMP & SSOP Adherence | Traceability | Corrective Action | Food Safety Training | Allergen Control"),
+    tech_skills=("Microsoft Excel, Word, Outlook | Inventory Management Systems | Food Safety Logs | Regulatory Documentation | "
+                 "Traceability Systems | LIMS (developing) | Report Generation"),
+    prof_skills=("Audit Readiness | Multi-Site Coordination | Training | Problem Solving | Communication | Attention to Detail"),
     houston_bullets=[
-        "Maintain regulatory documentation and participant records in compliance with federal program requirements.",
+        "Maintain regulatory documentation and records in compliance with federal program requirements.",
         "Deliver health education and training while adhering to standardized compliance protocols.",
-        "Compile and report site data for regulatory oversight and program compliance verification.",
     ],
     headstart_bullets=[
-        "Managed food safety compliance documentation across 3–6 program locations, maintaining audit-ready records that supported two successful center compliance audits.",
-        "Maintained traceability records for food, milk, and supply inventory, ensuring regulatory readiness and accurate product tracking across multiple sites.",
-        "Organized allergen control documentation and specialty requirement lists where compliance accuracy was essential to program safety.",
-        "Applied ServSafe food safety standards to daily operations, including sanitation verification, temperature monitoring, and corrective action documentation.",
+        "Managed food safety compliance documentation across 3–6 locations, maintaining audit-ready records that supported two successful audits.",
+        "Maintained traceability records for food, milk, and supply inventory, ensuring regulatory readiness across multiple sites.",
+        "Applied ServSafe standards to daily operations, including sanitation verification, temperature monitoring, and corrective action documentation.",
     ],
 )
 
@@ -228,28 +213,22 @@ resumes["compliance"] = dict(
 resumes["food_tech_rd"] = dict(
     filename="Monica_Felan_Food_Technologist_RD.pdf",
     target_role="Food Technologist (R&D / Product Development)",
-    summary=("Food science professional with a BS in Food, Nutrition, and Dietetics and 4+ years applying nutritional "
-             "knowledge, product formulation concepts, and quality standards to food program operations. ServSafe and "
-             "HACCP certified (in progress), with experience developing specialty menus, managing product specifications, "
-             "and coordinating multi-site program implementation. Strong in documentation, recipe/formula management, and "
-             "cross-functional collaboration. Seeking a Food Technologist role in R&D or product development."),
+    summary=("Food science professional with a BS in Food, Nutrition, and Dietetics and 4+ years applying formulation "
+             "concepts and quality standards to food operations. ServSafe and HACCP certified (in progress), with experience "
+             "developing specialty menus and managing product specifications across 3–6 locations."),
     food_safety_skills=("ServSafe Certified | HACCP (in progress) | Product Specifications | Recipe/Formula Management | "
-                        "Allergen Control & Labeling | Nutritional Analysis | Ingredient Functionality (developing) | "
-                        "GMP Compliance | Sensory Evaluation (developing) | Food Safety Standards"),
+                        "Allergen Control & Labeling | Nutritional Analysis | GMP Compliance | Food Safety Standards"),
     tech_skills=("Microsoft Excel (formulations, data analysis) | Microsoft Word & Outlook | Nutritional Analysis Software | "
-                 "Recipe/Menu Development | Inventory Management Systems | Data Collection & Documentation | "
-                 "Laboratory Equipment (developing) | Product Testing (developing)"),
-    prof_skills=("Formula/Recipe Development | Attention to Detail | Project Coordination | Cross-Functional Collaboration | "
-                 "Problem Solving | Time Management | Communication | Training & Education"),
+                 "Recipe Development | Inventory Management | Data Collection | Laboratory Equipment (developing)"),
+    prof_skills=("Formula/Recipe Development | Attention to Detail | Project Coordination | Collaboration | Problem Solving"),
     houston_bullets=[
-        "Develop and deliver nutrition education programs, applying nutritional science principles to program design and participant consultation.",
+        "Develop and deliver nutrition education programs, applying nutritional science principles to program design.",
         "Maintain program data and participant information with strong attention to accuracy and detail.",
     ],
     headstart_bullets=[
-        "Developed and managed specialty menus and product specifications across 3–6 program locations, applying nutritional science and allergen control principles to formula development.",
-        "Coordinated multi-site program implementation, managing recipe/menu documentation, ingredient lists, and product specifications to ensure consistent execution.",
-        "Maintained detailed product and ingredient documentation, including allergen controls and specialty requirement lists where formula accuracy was critical.",
-        "Supported two successful compliance audits by maintaining organized records of product formulations, ingredient specifications, and nutritional documentation.",
+        "Developed and managed specialty menus and product specifications across 3–6 locations, applying nutritional science and allergen control principles.",
+        "Coordinated multi-site implementation, managing recipe/menu documentation, ingredient lists, and product specifications for consistent execution.",
+        "Supported two successful audits by maintaining organized records of product formulations, ingredient specifications, and nutritional documentation.",
     ],
 )
 
